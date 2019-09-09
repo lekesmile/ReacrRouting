@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaUserPlus } from 'react-icons/fa';
 import { FaUserTie } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,7 +10,7 @@ const Header = () => {
     return (
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <a className="navbar-brand text-danger" href="/">Rejected Programmer Oy</a>
+            <Link className="navbar-brand text-danger" to="/">Programming Angels Oy</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -18,21 +19,21 @@ const Header = () => {
 
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        <Link className="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/users">Users</a>
+                        <Link className="nav-link" to="/users">Users</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/contact">Contact</a>
+                        <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
 
                 </ul>
 
 
                 <ul className="navbar-nav mr-sm-2">
-                    <li className="nav-item"><a className="nav-link" href="/signup"> <FaUserPlus /> Sign Up</a></li>
-                    <li className="nav-item"><a className="nav-link" href="/login"> <FaUserTie /> Login</a></li>
+                    <li className="nav-item"><Link className="nav-link" to="/signup"> <FaUserPlus /> Sign Up</Link></li>
+                    <li className="nav-item"><Link className="nav-link" to="/login"> <FaUserTie /> Login</Link></li>
                 </ul>
             </div>
 

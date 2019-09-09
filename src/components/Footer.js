@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa"
 const Footer = () => {
     return (
         <div className="headfoot">
-            <div className="row">
+            <div className="row mb-5">
                 <div className="col-md-4">
                     <h3>Yhteystiedot</h3>
                     <p>Where we are </p>
@@ -20,14 +20,14 @@ const Footer = () => {
                 </div>
                 <div className="col-md-4 ">
                     <h3> Seuraa meitä </h3>
-                    <div className="row mx-auto social">
-                        <p> <FaFacebookF /> </p>
-                        <p> <FaInstagram /></p>
-                        <p> <FaLinkedinIn /></p>
+                    <div className="row  social justify-content-center">
+                        <p className="m-2"> <FaFacebookF /> </p>
+                        <p className="m-2"> <FaInstagram /></p>
+                        <p className="m-2"> <FaLinkedinIn /></p>
                     </div>
                 </div>
             </div>
-            <p> © 2019 – All Rights Reserved</p>
+            <p className="mt-5"> © 2019 – All Rights Reserved</p>
         </div>
     )
 }
